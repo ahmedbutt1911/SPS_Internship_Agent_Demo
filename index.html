@@ -63,11 +63,9 @@
         hostURL: "https://dl.watson-orchestrate.ibm.com",
         rootElementID: "root",
         chatOptions: {
-          agentId: "0720c863-27f4-47e4-b3f4-76540eaeaa13",
-          agentEnvironmentId: "5cdd5784-f134-43bc-b690-b210a0c40211",
+            agentId: "0720c863-27f4-47e4-b3f4-76540eaeaa13",
         }
       };
-
       setTimeout(function () {
         const script = document.createElement('script');
         script.src = `${window.wxOConfiguration.hostURL}/wxochat/wxoLoader.js?embed=true`;
@@ -75,12 +73,7 @@
             wxoLoader.init();
         });
         document.head.appendChild(script);
-      }, 0);
-
-      // Demo interaction
-      function startDemo() {
-          alert("Your AI assistant is now active! Look for the chat widget in the bottom right corner.");
-      }
+      }, 0);                     
     </script>
 </body>
 </html>
